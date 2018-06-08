@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+body{
+    background-color:green;
+}
+
+#cardContainer{
+    background-color:white;
+    width:320px;
+    margin:4rem auto;
+    border:1px solid black;
+    border-radius:15px;
+}
+
+h2{
+    font-size:8rem;
+    line-height:0.5rem;
+    padding:3rem 1rem;
+}
+
+.turnBlack{
+  color:black;
+}
+
+.turnRed{
+  color:red;
+}
+
+#cardValueContainer{
+    margin:3.5rem 1rem;
+    text-align:center;
+}
+
+h1{
+    font-size:8rem;
+}
+
+#bottomSuitContainer{
+    transform: rotate(180deg);
+}
+
