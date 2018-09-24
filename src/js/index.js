@@ -11,12 +11,7 @@ import '../style/index.scss';
 
 window.onload = function(){
 
-    
-   
-    
-
-
-
+    function newCard(){
         var value = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"];
         var suits = ["&heartsuit;" , "&diamondsuit;", "&clubs;", "&spadesuit;"];
         
@@ -25,6 +20,8 @@ window.onload = function(){
         
         var suit = Math.floor(Math.random() * suits.length);
         var randomSuit = suits[suit];
+        
+        
         
         if (randomSuit === "&heartsuit;" || randomSuit === "&diamondsuit;"){
           document.getElementById('topSuit').className="";
@@ -38,12 +35,8 @@ window.onload = function(){
         document.getElementById('topSuit').innerHTML = randomSuit;
         
         document.getElementById('bottomSuit').innerHTML = randomSuit;
-        
-    
-    //Reloads whole page on button click
-    window.newCard = function(){
-        window.location.reload();
-    };
+
+    }
     
     
 };
